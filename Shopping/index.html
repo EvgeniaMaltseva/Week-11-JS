@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Корзина</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">К О Р З И Н А</h1>
+    </header>
+    <main class="main">
+        <div class="active-items">
+            <div class="prinzessin">
+                <img class="item-img" src="assets/image/Princess.jpg" alt="Princess dress">
+                <p class="item-info"> Костюм для девочек, платье принцессы с короной и волшебной палочкой.<br> Подходит для карнавала, дня рождения.</p>
+                <div class="size">
+                    <p class="size-info"> Выберите размер</p>
+                    <select>
+                        <option value="1">86-92</option>
+                        <option value="2">98-104</option>
+                        <option value="3">110-116</option>
+                        <option value="4">122-128</option>
+                        <option value="5">134-140</option>
+                        <option value="6">140-146</option>
+                    </select>
+                </div>    
+                <div class="quantity">
+                    <p class="quantity-info">Количество </p>
+                    <button class="amount">1</button>
+                    <!--<form>
+                        <input type="number">
+                    </form>-->
+                </div>
+                <div class="price-info">
+                    <div class="price" id="pricePrinzessin">21,99</div> 
+                    <p class="item_price price-currency">€</p>
+                </div>       
+            </div>
+            <div class="pirat">
+                <img class="item-img" src="assets/image/Pirat.jpg" alt="Pirat dress">
+                <p class="item-info"> Костюм для девочек, пиратский костюм.<br> Подходит для карнавала, дня рождения.</p>
+                <div class="size">
+                    <p class="size-info"> Выберите размер</p>
+                    <select>
+                        <option value="1">86-92</option>
+                        <option value="2">98-104</option>
+                        <option value="3">110-116</option>
+                        <option value="4">122-128</option>
+                        <option value="5">134-140</option>
+                        <option value="6">140-146</option>
+                    </select>
+                </div>    
+                <div class="quantity">
+                    <p class="quantity-info">Количество</p>
+                    <button class="amount">1</button>
+                    <!--<form>
+                        <input type="number">
+                    </form>-->
+                </div>
+                <div class="price-info">
+                    <div class="price" id="pricePirat">24,15</div> 
+                    <p class="item_price price-currency">€</p>
+                </div>
+            </div>
+            <div class="jasmin">
+                <img class="item-img" src="assets/image/jasmin.jpg" alt="Pirat dress">
+                <p class="item-info"> Костюм для девочек, платье принцессы Жасмин.<br> Подходит для карнавала, дня рождения.</p>
+                <div class="size">
+                    <p class="size-info"> Выберите размер</p>
+                    <select>
+                        <option value="1">86-92</option>
+                        <option value="2">98-104</option>
+                        <option value="3">110-116</option>
+                        <option value="4">122-128</option>
+                        <option value="5">134-140</option>
+                        <option value="6">140-146</option>
+                    </select>
+                </div>    
+                <div class="quantity">
+                    <p class="quantity-info">Количество</p>
+                    <button class="amount">1</button>
+                    <!--<form>
+                        <input type="number">
+                    </form>-->
+                </div>
+                <div class="price-info">
+                    <div class="price" id="priceJasmin">19,99</div> 
+                    <p class="item_price price-currency">€</p>
+                </div> 
+            </div>           
+            <div class="addams">
+                <img class="item-img" src="assets/image/addams.jpg" alt="Addams dress">
+                <p class="item-info"> Костюм для девочек, платье из сериала "Адамс".<br> Подходит для карнавала, дня рождения.</p>
+                <div class="size">
+                    <p class="size-info"> Выберите размер</p>
+                    <select>
+                        <option value="1">86-92</option>
+                        <option value="2">98-104</option>
+                        <option value="3">110-116</option>
+                        <option value="4">122-128</option>
+                        <option value="5">134-140</option>
+                        <option value="6">140-146</option>
+                    </select>
+                </div>    
+                <div class="quantity">
+                    <p class="quantity-info">Количество</p>
+                    <button class="amount">1</button>
+                    <!--<form>
+                        <input type="number">
+                    </form>-->
+                </div>
+                <div class="price-info">
+                    <div class="price" >35,50</div> 
+                    <p class="item_price price-currency">€</p>
+                </div>        
+            </div>
+        <p class="text-price">Итого:</p>
+        
+        <br>
+        <button class="discount" onclick="getDiscount()">Получить скидку 20%</button>
+        <p class="total-price" id="total-price"></p>
+       
+        
+
+        
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
